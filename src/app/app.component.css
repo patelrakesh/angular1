@@ -1,0 +1,320 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+select, input {
+	height: 30px;
+}
+.row {
+	margin-bottom:10px;
+}
+label {
+    width: 6em;
+    text-align: right;
+    margin-right: 15px;
+}
+.first_one, .second_one {
+	padding-left:0px !important;
+	padding-right: 0px !important;
+}
+
+.sear_main_frm {
+	border: 1px solid #dee2e6;
+}
+
+.below_main_sear th{
+	text-align:center;
+	width: auto;
+	background-color: #dee2e6;
+	padding: 5px 0px !important;
+    vertical-align: middle !important;
+}
+.below_main_sear td.fir_cen {
+	text-align:center;
+	vertical-align: middle !important;
+    padding: 5px 0px;
+}
+.below_main_sear table {
+	width: 98%;
+	margin: 0 auto;
+}
+
+table, tr, td, th {
+	border: 1px solid #666 !important;
+}
+td, th{
+	padding: 3px 0px;
+}
+.search_main {
+    width: 90%;
+    margin: 0 auto;
+}
+.belw_btn_main {
+    text-align: right;
+	margin-top: 5em;
+}
+.rule_nm select {
+    width: 70%;
+}
+.rit_opt, .left_opt {
+	width: 30%;
+}
+.sear_main_head h4 {
+    padding-left: 15px;
+}
+.act_sear_main {
+    padding-left: 15px;
+	margin-bottom: 5px;
+}
+.act_sear_main a{
+	color: #000;
+	padding: 0 10px;
+}
+.searc_btn {
+    background-color: unset;
+    border: 1px solid #666666bf;
+    border-radius: 5px;
+	margin-right: 10px;
+	cursor:pointer;
+}
+.rest_btn {
+    background-color: unset;
+    border: 1px solid #666666bf;
+    border-radius: 5px;
+	margin-right: 10px;
+	cursor:pointer;
+}
+.search_main h4 {
+    display: inline-block;
+    margin-left: 10px;
+}
+.down_caret_arr {
+	font-size: 25px;
+}
+.act_sear_main .dropdown-toggle::before {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-right: 1.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+}
+.act_sear_main .dropdown-toggle::after { 
+	content: unset;
+}
+.act_sear_main .dropdown button, .btn_sub_cls {
+	background-color: unset;
+    border: none;
+	cursor:pointer;
+}
+.drop_sec {
+	cursor:pointer;
+}
+[role="treeitem"][aria-expanded="false"] > span:before, [role="treeitem"][aria-expanded="true"] > span:before {
+	content: unset;
+}
+.main_side_mn {
+	height: 80vh;
+	overflow-x: auto;
+	overflow-y: scroll;
+}
+.main_side_mn li{
+	font-size: 15px;
+}
+.main_side_mn li a{
+	color: #000;
+}
+.upper_left_main h2{
+	display: inline-block;
+	margin-top: -7px;
+}
+.sear_main_head h2 {
+	display: inline-block;
+}
+.sear_main_head img {
+	width:30px;
+	margin-top: -10px;
+    margin-right: 10px;
+}
+.upper_left_main img {
+	width:30px;
+    margin-right: 10px;
+	margin-left:15px;
+}
+.sear_main_head {
+    margin: 10px 0px;
+}
+.modal-dialog {
+    max-width: 85% !important;
+}
+.main_up_hd {
+	display: inline-flex;
+}
+.up_et_rt {
+	text-align:right;
+}
+.main_up_hd {
+    margin-top: 15px;
+}
+.plus_btn {
+	background-color: unset;
+    border: none;
+	cursor:pointer;
+}
+.asset_cat_lbl {
+    width: 10em;
+}
+.code_txt {
+    width: 20em;
+}
+.nm_txt, .desc_txt {
+	width: 90%;
+}
+.nm_lbl span {
+    color: red;
+}
+.upper_left_main {
+	float:left;
+}
+.upper_right_main {
+	float:right;
+}
+.upper_right_main a, .cancl_btn a, .sub_clse button{
+	padding:7px;
+	border:1px solid #666;
+	border-radius: 3px;
+	color:#000;
+}
+.sub_clse a{
+	border: unset;
+}
+.upper_right_main a:hover, .cancl_btn a:hover {
+	text-decoration: none;
+}
+.sub_new {
+	margin-bottom:15px;
+}
+.sub_new a {
+    padding: 7px 8px !important;
+}
+.panel-primary {
+	border: unset;
+}
+.panel-body {
+	border: 1px solid #666;
+	margin: 35px 10px;
+}
+.risk_lbl {
+    width: 100%;
+    text-align: left;
+}
+.sixth_main th{
+	text-align:center;
+	width: auto;
+	background-color: #666666ad;
+}
+.sixth_main td.fir_cen {
+	text-align:center;
+}
+.sixth_main table {
+	width: 91%;
+    float: right;
+}
+.main_modal_pop {
+	height: 90vh;
+	overflow-y: scroll;
+	overflow-x: auto;
+}
+.first_main select {
+    width: 25em;
+}
+.city_grp_txt {
+	width:35em;
+}
+ul {
+    padding-left: 1.90em;
+}
+
+@media only screen and (max-width: 767px) {
+.main_side_mn {
+    height: auto !important;
+    overflow-x: unset !important;
+    overflow-y: unset !important;
+}
+.sear_main_head h2 {
+    font-size: 25px !important;
+}
+.rule_nm select {
+    width: 60% !important;
+}
+.rit_opt, .left_opt {
+    width: 40% !important;
+}
+.belw_btn_main {
+    margin-top: 1em !important;
+}
+.below_main_sear th {
+	font-size:13px !important;
+}
+.modal-dialog {
+    max-width: 95% !important;
+}
+.sub_clse button {
+	padding: 4px !important;
+}
+label {
+    width: 100px !important;
+    text-align: left !important;
+}
+.city_grp_txt {
+    width: 19em !important;
+    margin-top: 10px !important;
+}
+.code_txt, .custo_id_txt, .first_main select, .nm_txt, .desc_txt {
+    width: 19em !important;
+}
+.sixth_main table {
+    width: 100% !important;
+    float: none !important;
+}
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.side_main_search {
+	width: 100%;
+}
+.first_main select {
+    width: 9em;
+}
+.custo_id_txt {
+    width: 100px;
+}
+.city_grp_txt {
+    width: 27em;
+}
+.nm_txt, .desc_txt {
+    width: 80%;
+}
+.sub_new a{
+	display: inline-block;
+}
+.side_search {
+	left: 10px;
+}
+.modal {
+    z-index: 9999999999 !important;
+}
+
+}
+.side_main_search {
+	width: 100%;
+}
+.side_search {
+	left: 10px;
+}
+.red_txt {
+	color: red;
+	font-size: 12px;
+}

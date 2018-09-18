@@ -1,20 +1,462 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
+
+<app-navbar></app-navbar>
+<div class="container-fluid">
+    <div class="row">
+    	<div class="col-xs-12 col-sm-2 col-lg-2">
+        	<div class="row">
+            <div class="col-xs-12 col-lg-12 col-sm-12 search_nav_left_top">
+            	<div class="search_nav">
+                	<form class="form-search-inline my-2 my-lg-0">
+                	<input class="form-control-search side_main_search" type="text" placeholder="Quick Find" aria-label="Search">
+                    <fa name="search" class="side_search"></fa>
+                    </form>
+                </div>
+                </div>
+            </div>
+<div class="row main_side_mn">
+<ul role="tree" aria-labelledby="tree_label" style="padding-left:10px;">
+  <li role="treeitem" aria-expanded="true" >
+    <span>
+      <fa name="folder"></fa> Settings
+    </span>
+    <ul role="group">
+      <li aria-expanded="true">
+        <span>
+            <fa name="file"></fa> Control Framework
+        </span>
+        <ul role="group">
+          <li>
+            <fa name="file"></fa><a href="">  Framework</a>
+          </li>
+         <li>
+            <fa name="file"></fa><a href=""> Family</a>
+          </li>
+          <li>
+            <fa name="file"></fa><a href=""> Control </a>
+          </li>
+          <li>
+            <fa name="file"></fa><a href=""> Sub Control</a>
+          </li>
+          <li>
+            <fa name="file"></fa><a href=""> Policy</a>
+          </li>
+          <li>
+            <fa name="file"></fa><a href=""> Control Rule</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul role="group">
+      <li aria-expanded="true">
+        <span>
+            <fa name="file"></fa> Administrator
+        </span>
+        <ul role="group">
+          <li aria-expanded="true">
+            <fa name="file"></fa> Users
+        	<ul role="group">
+                <li>
+                	<fa name="file"></fa><a href=""> Users</a>
+                </li>
+                <li>
+                	<fa name="file"></fa><a href=""> Roles</a>
+                </li>
+                <li>
+                	<fa name="file"></fa><a href=""> Permission Set</a>
+                </li>
+                <li>
+                	<fa name="file"></fa><a href=""> Group</a>
+                </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  	 	<ul role="group">
+          <li aria-expanded="true">
+            <fa name="file"></fa> Radar
+        	<ul role="group">
+                <li>
+                	<fa name="file"></fa><a href=""> Radar Setup </a>
+                </li>
+            </ul>
+          </li>
+    	</ul>
+        <ul role="group">
+          <li aria-expanded="true">
+            <fa name="file"></fa> Alert
+        	<ul role="group">
+                <li>
+                	<fa name="file"></fa><a href=""> Alert Rule</a>
+                </li>
+                 <li>
+                	<fa name="file"></fa><a href=""> Alert Escalation Chain</a>
+                </li>
+            </ul>
+          </li>
+    	</ul>
+        <ul role="group">
+          <li aria-expanded="true">
+            <fa name="file"></fa> Message Template
+        	<ul role="group">
+                <li>
+                	<fa name="file"></fa><a href=""> Message Template</a>
+                </li>
+            </ul>
+          </li>
+    	</ul>
+        <ul role="group">
+          <li aria-expanded="true">
+            <fa name="file"></fa> Security
+        	<ul role="group">
+                <li>
+                	<fa name="file"></fa><a href=""> Activation</a>
+                </li>
+            </ul>
+          </li>
+    	</ul>
+        <ul role="group">
+          <li aria-expanded="true">
+            <fa name="file"></fa> Contol Lab
+        	<ul role="group">
+                <li>
+                	<fa name="file"></fa><a href=""> Lab Control</a>
+                </li>
+            </ul>
+          </li>
+    	</ul>
+        <ul role="group">
+          <li aria-expanded="true">
+            <fa name="file"></fa> Assets
+        	<ul role="group">
+                <li>
+                	<fa name="file"></fa><a href=""> Hardware</a>
+                </li>
+            </ul>
+          </li>
+    	</ul>
+        
+        
+        
+        
+        
+        
+        
   </li>
 </ul>
+
+    </div>
+        </div>
+        <div class="col-xs-12 col-sm-10 col-lg-10">
+         <div class="sear_main_head">
+            <img src="src/assets/images/control_icon.png"><h2>Manage Control Rule</h2>
+         </div>
+        <ul class="nav nav-tabs">
+        <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#current">Current</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#history">History</a>
+        </li>
+        </ul>
+        
+        <div class="tab-content">
+        <!-- current section -->
+        <div id="current" class="tab-pane active sear_main_frm"><br>
+        <div class="row">
+        	<form class="search_main">
+			<div class="drop_sec" onclick="show_hide_frm()"><fa name="caret-down" class="down_caret_arr"></fa><h4>Search</h4></div>
+            <div class="frm_hide_show_sec" id="show_hide_frm">
+            <div class="rule_nm">
+            <label class="rule_opt_lbl">Rule Name</label>
+            <select>
+                <option>AC-1(10)</option>
+                <option>AC-1(10)</option>
+                <option>AC-1(10)</option>
+                <option>AC-1(10)</option>
+                <option>AC-1(10)</option>
+            </select>
+            </div>
+           <div class="active_opt">
+           <label class="left_opt_lbl">Active</label>
+            <select class="left_opt">
+                <option>Yes</option>
+                <option>No</option>
+                <option>All</option>
+            </select>
+            <label class="rit_opt_lbl">User Define</label>
+            <select class="rit_opt">
+                <option>Yes</option>
+                <option>No</option>
+                <option>All</option>
+            </select>
+            </div>
+            <div class="belw_btn_main">
+            	<input type="submit" class="searc_btn" />
+                <input type="reset" class="rest_btn" />
+            </div>
+        </div>
+        </form>
+        </div>
+        <!-- below table section-->
+        <div class="row">
+        <div class="col-lg-12 col-xs-12 col-sm-12">
+        <div class="below_main_sear">
+        <div class="sear_main_head">
+        <h4>Control</h4>
+        </div>
+        <div class="act_sear_main">
+            <span class="dropdown">
+            <button type="button" class="dropdown-toggle" data-toggle="dropdown">Actions</button>
+            <span class="dropdown-menu">
+            <a class="dropdown-item" href="#">Actions1</a>
+            <a class="dropdown-item" href="#">Actions1</a>
+            </span>
+            </span>
+            <span class="dropdown">
+            <button type="button" class="dropdown-toggle" data-toggle="dropdown">View</button>
+            <span class="dropdown-menu">
+            <a class="dropdown-item" href="#">view1</a>
+            <a class="dropdown-item" href="#">view2</a>
+            </span>
+            </span>
+            <button type="button" class="plus_btn" data-toggle="modal" data-target="#myModal"><fa name="plus" class="add_plus"></fa></button>
+            <a href=""><fa name="pencil" class="edit_pencil"></fa></a>
+        </div>
+        <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+        <div class="modal-content">
+        
+        <div class="main_modal_pop">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <div class="row">
+            <div class="col-lg-6 col-sm-6 col-xs-12 first_one">
+            <div class="upper_left_main modal-header">
+            <img src="src/assets/images/control_icon.png"><h2>Control Rule</h2>
+            </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-12 first_one">
+            <div class="col-lg-12 col-sm-12 col-xs-12 first_one main_up_hd">
+       		<div class="col-lg-8 col-sm-8 col-xs-12 first_one up_et_rt">
+            <div class="upper_right_canl_main">
+            <div class="cancl_btn">
+            <a href="">Cancel</a>
+            </div>
+            </div>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-xs-12 upper_right_main">
+            <div class="upper_right_main_undr">
+            <div class="sub_new">
+            <a (click)="getrulesvale()">Submit and New</a>
+            </div>
+            <div class="sub_clse">
+            <span class="dropdown">
+            <button class="dropdown-toggle btn_sub_cls" data-toggle="dropdown" >Submit and Close</button>
+            <span class="dropdown-menu">
+            <a class="dropdown-item" (click)="postrulesvale()" >Submit and Close</a>
+            <a class="dropdown-item" href="#">Submit and Close</a>
+            </span>
+            </span>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+        </div>
+        <!-- model body -->
+		<div class="panel-body modal-body">
+     	 <form class="col-lg-12">
+          <div class="row first_main">
+          <div class="col-lg-6 col-sm-6 col-xs-12 first_one">
+            <label class="asset_type_lbl">Asset Type</label>
+            <select (change)="asset_typ($event)" required>
+                <option>Software</option>
+                <option>Software</option>
+                <option>Software</option>
+            </select>
+             <span class="red_txt" *ngIf="foundtyp">This Field is required.</span>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-12 second_one">
+            <label class="asset_cat_lbl">Asset Category</label>
+            <select (change)="asset_cat($event)" required>
+                <option>Linux</option>
+                <option>Linux</option>
+                <option>Linux</option>
+            </select>
+             <span class="red_txt" *ngIf="foundcat">This Field is required.</span>
+            </div>
+          </div>
+          
+          <div class="row second_main">
+          <div class="col-lg-4 col-sm-4 col-xs-12 first_one">
+            <label class="custo_id_lbl">Customer ID</label>
+            <input type="text" class="custo_id_txt" name="customer_id" (keyup)="customerid($event)">
+          </div>
+          <div class="col-lg-8 col-sm-8 col-xs-12 second_one">
+           <!-- <label class="city_grp_lbl">City Group</label>-->
+            <input type="text" class="city_grp_txt" placeholder="City Group" name="city_group" (keyup)="citygrp($event)">
+             <span class="red_txt" *ngIf="foundgrp">This Field is required.</span>
+          </div>
+          </div>
+          
+          <div class="row third_main">
+          <div class="col-lg-12 col-sm-12 col-xs-12 first_one">
+            <label class="code_lbl">Code</label>
+            <input type="text" class="code_txt" name="code_txt" (keyup)="code_custo($event)" >  
+            <span class="red_txt" *ngIf="foundcd">This Field is required.</span>     
+          </div>
+          </div>
+          
+          <div class="row fourth_main">
+          <div class="col-lg-12 col-sm-12 col-xs-12 first_one">
+            <label class="nm_lbl"><span>*</span>Name</label>
+            <input type="text" class="nm_txt" name="name_customer" (keyup)="name_custo($event)" required> 
+            <span class="red_txt" *ngIf="foundnm">This Field is required.</span>
+          </div>
+          </div>
+          
+          <div class="row fifth_main">
+          <div class="col-lg-12 col-sm-12 col-xs-12 first_one">
+            <label class="desc_lbl">Description</label>
+            <textarea rows="10" cols="50" class="desc_txt" name="description_customer" (keyup)="description_custo($event)" ></textarea>
+          </div>
+          </div>
+          
+      
+      <div class="row sixth_main">
+      <div class="col-lg-12 col-sm-12 col-xs-12 first_one">
+      	<label class="risk_lbl">Risk Condition</label>
+      </div>
+      <div class="col-lg-12 col-sm-12 col-xs-12 first_one">
+      	<table class="table table-striped">
+        <thead>
+        <tr>
+        <th><input type="checkbox" /></th>
+        <th>Condition Number</th>
+        <th>Attribute</th>
+        <th>Operator</th>
+        <th>Value</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td class="fir_cen"><input type="checkbox" /></td>
+        <td class="fir_cen">1</td>
+        <td>Software Version</td>
+        <td>equals</td>
+        <td></td>
+        </tr>
+        <tr>
+        <td class="fir_cen"><input type="checkbox" /></td>
+        <td class="fir_cen">1</td>
+        <td>Software Version</td>
+        <td>equals</td>
+        <td></td>
+        </tr>
+        <tr>
+        <td class="fir_cen"><input type="checkbox" /></td>
+        <td class="fir_cen">1</td>
+        <td>Software Version</td>
+        <td>equals</td>
+        <td></td>
+        </tr>
+        <tr>
+        <td class="fir_cen"><input type="checkbox" /></td>
+        <td class="fir_cen">1</td>
+        <td>Software Version</td>
+        <td>equals</td>
+        <td></td>
+        </tr>
+        <tr>
+        <td class="fir_cen"><input type="checkbox" /></td>
+        <td class="fir_cen">1</td>
+        <td>Software Version</td>
+        <td>equals</td>
+        <td></td>
+        </tr>
+        </tbody>
+        </table>
+      
+      </div>
+      </div>
+        
+      </form>
+    	</div>
+        
+      	</div>
+        </div>
+        </div>
+        </div>
+  
+        <div class="col-lg-12 col-sm-12 col-xs-12 first_one">
+        <table class="table table-striped">
+        <thead>
+        <tr>
+        <th><input type="checkbox" /></th>
+        <th>Condition Number</th>
+        <th>Attribute</th>
+        <th>Operator</th>
+        <th>Value</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td class="fir_cen"><input type="checkbox" /></td>
+        <td class="fir_cen">1</td>
+        <td>Software Version</td>
+        <td>equals</td>
+        <td></td>
+        </tr>
+        <tr>
+        <td class="fir_cen"><input type="checkbox" /></td>
+        <td class="fir_cen">1</td>
+        <td>Software Version</td>
+        <td>equals</td>
+        <td></td>
+        </tr>
+        <tr>
+        <td class="fir_cen"><input type="checkbox" /></td>
+        <td class="fir_cen">1</td>
+        <td>Software Version</td>
+        <td>equals</td>
+        <td></td>
+        </tr>
+        <tr>
+        <td class="fir_cen"><input type="checkbox" /></td>
+        <td class="fir_cen">1</td>
+        <td>Software Version</td>
+        <td>equals</td>
+        <td></td>
+        </tr>
+        <tr>
+        <td class="fir_cen"><input type="checkbox" /></td>
+        <td class="fir_cen">1</td>
+        <td>Software Version</td>
+        <td>equals</td>
+        <td></td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        </div> 
+        </div>
+       	</div>
+        
+        
+        
+        
+        <!-- history section-->
+        </div>
+        <div id="history" class="tab-pane fade">
+        </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
 
