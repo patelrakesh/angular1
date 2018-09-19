@@ -1,92 +1,54 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
+import { Observable } from 'rxjs/Observable';
 
- 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
-  title = 'ngbootstrap';
-  id:string = '';
-  city_grp:string = '';
-  name:string = '';
-  asset_category:string = '';
-  asset_type:string = '';
-  public now: Date = new Date();
-  
-  constructor(private httpClient: HttpClient) {}
-	  customerid(event:any){
-	  	this.id = event.target.value;
-	  }
-	  citygrp(event:any){
-	  	this.city_grp = event.target.value;
-		this.foundgrp = false;
-	  }
-	  name_custo(event:any){
-	  	this.name = event.target.value;
-		this.foundnm = false;
-	  }
-	  description_custo(event:any){
-	  	this.description = event.target.value;
-	  }
-	  code_custo(event:any){
-	  	this.code = event.target.value;
-		this.foundcd = false;
-	  }
-	  asset_cat(event:any){
-	  	this.asset_category = event.target.value;
-		this.foundcat = false;
-	  }
-	  asset_typ(event:any){
-	  	this.asset_type = event.target.value;
-		this.foundtyp = false;
-	  }
-	  
-        
-	  
-	  postrulesvale (){
-	  	this.httpClient.post(`http://dev01.cyberradar.net:8080/api/settings/rules`,
-		{	
-			createdDate: this.now,
-			customerid: this.id,
-			name: this.name,
-			city_grp: this.city_grp,
-			description: this.description,
-			code: this.code,
-			asset_category: this.asset_category,
-			asset_type: this.asset_type
-		})
-		.subscribe(
-			(data:any) => {
-				if (this.name == ''){
-					this.foundnm = true;
-				}
-				if (this.code == ''){
-					this.foundcd = true;
-				}
-				if (this.city_grp == ''){
-					this.foundgrp = true;
-				}
-				if (this.asset_category == ''){
-					this.foundcat = true;
-				}
-				if (this.asset_type == ''){
-					this.foundtyp = true;
-				}
-				
-				console.log(data);
-			}
-		)
-	  }
-	  
-	  getrulesvale (){
-	  	this.httpClient.get(`http://my-json-server.typicode.com/techsithgit/json-faker-directory/profiles/?id=${this.id}`)
-		.subscribe(
-			(data:any[]) => {
-				console.log(data);
-			}
-		) }
+  	title = 'ngbootstrap';
+  	readonly ROOT_URL = 'http://dev01.cyberradar.net:8080/api/settings/rules';
+  	constructor(private http: HttpClient) {}
+  	AddRule (AssetType,AssetCategory,CustomerId,CityGroup,Code,Name,Description) {
+		const data = {
+			"activatedDate": "2018-09-19T06:29:32.576Z",
+			"assetType": {
+			  "id": "string",
+			  "name": "string"
+			},
+			"customerId": 0,
+			"customerName": "string",
+			"description": "string",
+			"disabledDate": "2018-09-19T06:29:32.576Z",
+			"isActive": false,
+			"isObsolete": false,
+			"isUserDefined": false,
+			"obsoleteDate": "2018-09-19T06:29:32.576Z",
+			"publishedDate": "2018-09-19T06:29:32.576Z",
+			"ruleCode": "string",
+			"ruleConditions": [
+			  {
+				"assetCategory": {
+				  "id": "string",
+				  "name": "string"
+				},
+				"attributeId": "string",
+				"conditionNumber": 0,
+				"constantOperation": "string",
+				"createdDate": "2018-09-19T06:29:32.576Z",
+				"id": "string",
+				"operator": "string",
+				"value": "string"
+			  }
+			],
+			"ruleName": "string"
+		  }
+		const headers = new HttpHeaders().set('Authorization', 'AccessToken:test');
+	  	this.newRule = this.http.post(this.ROOT_URL, data, {headers})
+	}
+}
 
 

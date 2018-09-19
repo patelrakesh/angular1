@@ -248,15 +248,16 @@
             <div class="col-lg-4 col-sm-4 col-xs-12 upper_right_main">
             <div class="upper_right_main_undr">
             <div class="sub_new">
-            <a (click)="getrulesvale()">Submit and New</a>
+            <a href="">Submit and New</a>
             </div>
             <div class="sub_clse">
             <span class="dropdown">
-            <button class="dropdown-toggle btn_sub_cls" data-toggle="dropdown" >Submit and Close</button>
+            <button type="button" class="dropdown-toggle btn_sub_cls" data-toggle="dropdown">Submit and Close</button>
             <span class="dropdown-menu">
-            <a class="dropdown-item" (click)="postrulesvale()" >Submit and Close</a>
+            <a class="dropdown-item" href="#" (click)="AddRule(AssetType.value,AssetCategory.value,CustomerId.value,CityGroup.value,Code.value,Name.value,Description.value)">Submit and Close</a>
             <a class="dropdown-item" href="#">Submit and Close</a>
             </span>
+            {{ newRule | async | json }}
             </span>
             </div>
             </div>
@@ -270,56 +271,51 @@
           <div class="row first_main">
           <div class="col-lg-6 col-sm-6 col-xs-12 first_one">
             <label class="asset_type_lbl">Asset Type</label>
-            <select (change)="asset_typ($event)" required>
-                <option>Software</option>
-                <option>Software</option>
-                <option>Software</option>
+            <select #AssetType>
+                <option>Software 1</option>
+                <option>Software 2</option>
+                <option>Software 3</option>
             </select>
-             <span class="red_txt" *ngIf="foundtyp">This Field is required.</span>
             </div>
             <div class="col-lg-6 col-sm-6 col-xs-12 second_one">
             <label class="asset_cat_lbl">Asset Category</label>
-            <select (change)="asset_cat($event)" required>
-                <option>Linux</option>
-                <option>Linux</option>
-                <option>Linux</option>
+            <select #AssetCategory>
+                <option>Linux 1</option>
+                <option>Linux 2</option>
+                <option>Linux 3</option>
             </select>
-             <span class="red_txt" *ngIf="foundcat">This Field is required.</span>
             </div>
           </div>
           
           <div class="row second_main">
           <div class="col-lg-4 col-sm-4 col-xs-12 first_one">
             <label class="custo_id_lbl">Customer ID</label>
-            <input type="text" class="custo_id_txt" name="customer_id" (keyup)="customerid($event)">
+            <input type="text" class="custo_id_txt" #CustomerId>
           </div>
           <div class="col-lg-8 col-sm-8 col-xs-12 second_one">
            <!-- <label class="city_grp_lbl">City Group</label>-->
-            <input type="text" class="city_grp_txt" placeholder="City Group" name="city_group" (keyup)="citygrp($event)">
-             <span class="red_txt" *ngIf="foundgrp">This Field is required.</span>
+            <input type="text" class="city_grp_txt" placeholder="City Group" #CityGroup>
           </div>
           </div>
           
           <div class="row third_main">
           <div class="col-lg-12 col-sm-12 col-xs-12 first_one">
             <label class="code_lbl">Code</label>
-            <input type="text" class="code_txt" name="code_txt" (keyup)="code_custo($event)" >  
-            <span class="red_txt" *ngIf="foundcd">This Field is required.</span>     
+            <input type="text" class="code_txt" #Code >       
           </div>
           </div>
           
           <div class="row fourth_main">
           <div class="col-lg-12 col-sm-12 col-xs-12 first_one">
             <label class="nm_lbl"><span>*</span>Name</label>
-            <input type="text" class="nm_txt" name="name_customer" (keyup)="name_custo($event)" required> 
-            <span class="red_txt" *ngIf="foundnm">This Field is required.</span>
+            <input type="text" class="nm_txt" #Name>       
           </div>
           </div>
           
           <div class="row fifth_main">
           <div class="col-lg-12 col-sm-12 col-xs-12 first_one">
             <label class="desc_lbl">Description</label>
-            <textarea rows="10" cols="50" class="desc_txt" name="description_customer" (keyup)="description_custo($event)" ></textarea>
+            <textarea rows="10" cols="50" class="desc_txt" #Description ></textarea>
           </div>
           </div>
           
@@ -341,36 +337,36 @@
         </thead>
         <tbody>
         <tr>
-        <td class="fir_cen"><input type="checkbox" /></td>
+        <td class="fir_cen"><input type="checkbox" value="1" #RiskCondition1 /></td>
         <td class="fir_cen">1</td>
         <td>Software Version</td>
         <td>equals</td>
         <td></td>
         </tr>
         <tr>
-        <td class="fir_cen"><input type="checkbox" /></td>
-        <td class="fir_cen">1</td>
+        <td class="fir_cen"><input type="checkbox"  value="2" #RiskCondition2/></td>
+        <td class="fir_cen">2</td>
         <td>Software Version</td>
         <td>equals</td>
         <td></td>
         </tr>
         <tr>
-        <td class="fir_cen"><input type="checkbox" /></td>
-        <td class="fir_cen">1</td>
+        <td class="fir_cen"><input type="checkbox" value="3" #RiskCondition3 /></td>
+        <td class="fir_cen">3</td>
         <td>Software Version</td>
         <td>equals</td>
         <td></td>
         </tr>
         <tr>
-        <td class="fir_cen"><input type="checkbox" /></td>
-        <td class="fir_cen">1</td>
+        <td class="fir_cen"><input type="checkbox" value="4" #RiskCondition4 /></td>
+        <td class="fir_cen">4</td>
         <td>Software Version</td>
         <td>equals</td>
         <td></td>
         </tr>
         <tr>
-        <td class="fir_cen"><input type="checkbox" /></td>
-        <td class="fir_cen">1</td>
+        <td class="fir_cen"><input type="checkbox" value="5" #RiskCondition5 /></td>
+        <td class="fir_cen">5</td>
         <td>Software Version</td>
         <td>equals</td>
         <td></td>
